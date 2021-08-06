@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/cssdetudo.css">
+    <title>Percentual</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <div>
+        <br>
+        <label>Valor de x</label>
+        <br>
+        <input type="number" id ="x" placeholder="Insira o valor do número x">
+
+    </div>
+
+    <div> 
+        <br>
+        <button type="button" onclick="calcular()">Calcular</button>
+    </div>
+
+    <div>
+        <br>
+        <label>Resultado:</label>
+        <br>
+        <input type="number" id="Resultado">
+    </div>
+
+    <script>
+        const calcular = function(){
+            let x = parseFloat(document.getElementById('x').value)
+            let y = x * (15 / 100)
+            let resultado = x + y
+
+            document.getElementById('Resultado').value = resultado
+        }
+        
+    </script> 
+
+</body>
+</html>
