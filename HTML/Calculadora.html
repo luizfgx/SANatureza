@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <link rel="stylesheet" href="/css/CSSBeutifly.css">
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        Trabalho Termodinamica
+    </header>
+
+    <nav>
+        <ul>
+                <li><a href="./Editorial.html">Editorial</a></li>
+                <li><a href="./Leis.html">Leis da Termodinâmica</a></li>
+                <li><a href="./Cotidiano.html">Aplicações no cotidiano</a></li>
+                <li><a href="./Maquina.html">Máquina funcionando</a></li>
+                <li><a href="./Calculadora.html">Eficiência das máquinas térmicas</a></li>
+                <li><a href="./Referencias.html">Referências</a></li>
+                <li><a href="./Erros.html">Erros de execução</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="row row-input">
+            <h1 class="h1-title">
+                Calculo da Converçao de Energia (ΔU=Q-W)
+            </h1>
+        </div>
+
+        <div class="row row-input">
+            <button onclick="leiaMais()" id="btnLeiaMais">Ver Calculadora</button>
+        </div>
+   
+           <script>
+               function leiaMais(){
+                   var pontos= document.getElementById("pontos");
+                   var maisTexto= document.getElementById("mais");
+                   var btnLeiaMais= document.getElementById("btnLeiaMais")
+   
+                   if(pontos.style.display === "none"){
+                       pontos.style.display = "inline";
+                       maisTexto.style.display = "none";
+                       btnLeiaMais.innerHTML="Ver calculadora";
+                   }else{
+                       pontos.style.display = "none";
+                       maisTexto.style.display = "inline";
+                       btnLeiaMais.innerHTML="Esconder Calculadora";
+                   }
+               }
+           </script>
+<span id="pontos">...</span>    <span id="mais">
+
+        <div class="row row-input">
+            <p>
+            <input type="number" id ="Q" placeholder="insira o Valor da Quantidade de Calor (Q)">
+            </p>
+        </div>
+
+        <div class="row row-input">
+            <p>
+            <input type="number" id ="W" placeholder="insira o Valor de Trabalho (W)">
+            </p>
+        </div>
+
+        <div class="row row-input">
+            <p>
+            <button type="button" onclick="calcular()">Calcular</button>
+            </p>
+        </div>
+
+        <div class="row row-input">
+        <label>Resultado</label>
+        </div>
+
+        <div class="row row-input">
+            <p>
+            <input type="number" id="Resultado">
+            </p>
+        </div>
+
+        <script>
+            const calcular = function(){
+                let Q = parseFloat(document.getElementById('Q').value)
+                let W = parseFloat(document.getElementById('W').value)
+                let resultado = Q - W 
+                
+                document.getElementById('Resultado').value = resultado
+            }
+        </script>
+    </div>
+
+</span>
+
+<div class="container">
+    <div class="row row-input">
+        <h1 class="h1-title">
+            Calculo da Converçao de Energia (Q=ΔU+W)
+        </h1>
+    </div>
+
+<div class="row row-input">
+    <button onclick="leiaMais1()" id="btnLeiaMais1">Ver Calculadora</button>
+</div>
+
+   <script>
+       function leiaMais1(){
+           var pontos1= document.getElementById("pontos1");
+           var maisTexto1= document.getElementById("mais1");
+           var btnLeiaMais1= document.getElementById("btnLeiaMais1")
+
+           if(pontos1.style.display === "none"){
+               pontos1.style.display = "inline";
+               maisTexto1.style.display = "none";
+               btnLeiaMais1.innerHTML="Ver calculadora";
+           }else{
+               pontos1.style.display = "none";
+               maisTexto1.style.display = "inline";
+               btnLeiaMais1.innerHTML="Esconder Calculadora";
+           }
+       }
+   </script>
+<span id="pontos1">...</span>    <span id="mais1">
+
+
+
+        <div class="row row-input">
+            <p>
+            <input type="number" id ="U" placeholder="insira o valor da Variaçao da Energia Interna (ΔU)">
+            </p>
+        </div>
+
+        <div class="row row-input">
+            <p>
+            <input type="number" id ="W2" placeholder="insira o Valor de Trabalho (W)">
+            </p>
+        </div>
+
+        <div class="row row-input">
+            <p>
+            <button type="button" onclick="calcular2()">Calcular</button>
+            </p>
+        </div>
+
+        <div class="row row-input">
+        <label>Resultado</label>
+        </div>
+
+        <div class="row row-input">
+            <p>
+            <input type="number" id="Resultado2">
+            </p>
+        </div>
+
+        <script>
+            const calcular2 = function(){
+                let U = parseFloat(document.getElementById('U').value)
+                let W2 = parseFloat(document.getElementById('W2').value)
+                let resultado2 = U + W2 
+                
+                document.getElementById('Resultado2').value = resultado2
+            }
+        </script>
+    </div>
+
+</span>
+
+    <div class="container">
+        <div class="row row-input">
+            <h1 class="h1-title">
+                Calculo da Converçao de Energia (W=Q-ΔU)
+            </h1>
+        </div>
+
+        <div class="row row-input">
+            <button onclick="leiaMais2()" id="btnLeiaMais2">Ver Calculadora</button>
+        </div>
+        
+           <script>
+               function leiaMais2(){
+                   var pontos2= document.getElementById("pontos2");
+                   var maisTexto2= document.getElementById("mais2");
+                   var btnLeiaMais2= document.getElementById("btnLeiaMais2")
+        
+                   if(pontos2.style.display === "none"){
+                       pontos2.style.display = "inline";
+                       maisTexto2.style.display = "none";
+                       btnLeiaMais2.innerHTML="Ver calculadora";
+                   }else{
+                       pontos2.style.display = "none";
+                       maisTexto2.style.display = "inline";
+                       btnLeiaMais2.innerHTML="Esconder Calculadora";
+                   }
+               }
+           </script>
+        <span id="pontos2">...</span>    <span id="mais2">
+
+        <div class="row row-input">
+            <p>
+            <input type="number" id ="Q2" placeholder="insira o Valor da Quantidade de Calor (Q)">
+            </p>
+        </div>
+
+        <div class="row row-input">
+            <p>
+            <input type="number" id ="U2" placeholder="insira o valor da Variaçao da Energia Interna (ΔU)">
+            </p>
+        </div>
+
+        <div class="row row-input">
+            <p>
+            <button type="button" onclick="calcular3()">Calcular</button>
+            </p>
+        </div>
+
+        <div class="row row-input">
+        <label>Resultado</label>
+        </div>
+
+        <div class="row row-input">
+            <p>
+            <input type="number" id="Resultado3">
+            </p>
+        </div>
+
+        <script>
+            const calcular3 = function(){
+                let Q2 = parseFloat(document.getElementById('Q2').value)
+                let U2 = parseFloat(document.getElementById('U2').value)
+                let resultado3 = Q2 - U2 
+                
+                document.getElementById('Resultado3').value = resultado3
+            }
+        </script>
+    </div>
+
+</span>
+
+    <div class="container">
+        <div class="row row-input">
+            <h1 class="h1-title">
+                Eficiencia Energetica (T/Q1)
+            </h1>
+        </div>
+
+        <div class="row row-input">
+            <button onclick="leiaMais3()" id="btnLeiaMais3">Ver Calculadora</button>
+        </div>
+        
+           <script>
+               function leiaMais3(){
+                   var pontos3= document.getElementById("pontos3");
+                   var maisTexto3= document.getElementById("mais3");
+                   var btnLeiaMais3= document.getElementById("btnLeiaMais3")
+        
+                   if(pontos3.style.display === "none"){
+                       pontos3.style.display = "inline";
+                       maisTexto3.style.display = "none";
+                       btnLeiaMais3.innerHTML="Ver calculadora";
+                   }else{
+                       pontos3.style.display = "none";
+                       maisTexto3.style.display = "inline";
+                       btnLeiaMais3.innerHTML="Esconder Calculadora";
+                   }
+               }
+           </script>
+        <span id="pontos3">...</span>    <span id="mais3">
+
+        <div class="row row-input">
+            <p>
+            <input type="number" id ="T" placeholder="insira o Valor do Trabalho Realizado (T)">
+            </p>
+        </div>
+
+        <div class="row row-input">
+            <p>
+            <input type="number" id ="Q1" placeholder="insira o valor Recebido da Fonte Quente (Q1)">
+            </p>
+        </div>
+
+        <div class="row row-input">
+            <p>
+            <button type="button" onclick="calcular4()">Calcular</button>
+            </p>
+        </div>
+
+        <div class="row row-input">
+        <label>Resultado</label>
+        </div>
+
+        <div class="row row-input">
+            <p>
+            <input type="number" id="Resultado4">
+            </p>
+        </div>
+
+        <script>
+            const calcular4 = function(){
+                let T = parseFloat(document.getElementById('T').value)
+                let Q1 = parseFloat(document.getElementById('Q1').value)
+                let resultado4 = T / Q1 
+                
+                document.getElementById('Resultado4').value = resultado4
+            }
+        </script>
+    </div>
+
+</span>
+
+<div class="container">
+    <div class="row row-input">
+        <h1 class="h1-title">
+            Trabalho Termodinâmica - Calculadora
+        </h1>
+    </div>
+
+    <div class="row row-input">
+        <button onclick="leiaMais4()" id="btnLeiaMais4">Esconder Calculadora</button>
+    </div>
+    
+       <script>
+           function leiaMais4(){
+               var pontos4= document.getElementById("pontos4");
+               var maisTexto4= document.getElementById("mais4");
+               var btnLeiaMais4= document.getElementById("btnLeiaMais4")
+    
+               if(pontos4.style.display === "inline"){
+                   pontos4.style.display = "none";
+                   maisTexto4.style.display = "inline";
+                   btnLeiaMais4.innerHTML="Esconder Calculadora";
+               }else{
+                   pontos4.style.display = "inline";
+                   maisTexto4.style.display = "none";
+                   btnLeiaMais4.innerHTML="Ver calculadora";
+               }
+           }
+       </script>
+<span id="pontos4">...</span>    <span id="mais4">
+
+    <div class="row row-input">
+        <img src="/img/calculadora/calculadora/calculadora2.png" alt=Calculadora usemap="#calcmap">
+        <map name='calcmap'>
+            <area shape="rect" coords="90,425,165,360" alt="zero" onClick="zero()">
+            <area shape="rect" coords="90,350,165,295" alt="um" onClick="um()">
+            <area shape="rect" coords="172,350,247,295" alt="dois" onClick="dois()">
+            <area shape="rect" coords="252,350,327,295" alt="tres" onClick="tres()">
+            <area shape="rect" coords="90,280,165,225" alt="quatro" onClick="quatro()">
+            <area shape="rect" coords="172,280,247,225" alt="cinco" onClick="cinco()">
+            <area shape="rect" coords="252,280,327,225" alt="seis" onClick="seis()">
+            <area shape="rect" coords="90,210,165,155" alt="sete" onClick="sete()">
+            <area shape="rect" coords="172,210,247,155" alt="oito" onClick="oito()">
+            <area shape="rect" coords="252,210,327,155" alt="nove" onClick="nove()">
+
+            <area shape="rect" coords="172,425,247,360" alt="," onClick="virgula()">
+            <area shape="rect" coords="252,425,327,360" alt="+" onClick="mais()">
+            <area shape="rect" coords="332,420,407,367" alt="=" onClick="igual()">
+            <area shape="rect" coords="332,350,407,295" alt="-" onClick="menos()">
+            <area shape="rect" coords="332,280,407,225" alt="x" onClick="vezes()">
+            <area shape="rect" coords="332,210,407,155" alt="/" onClick="divisao()">
+        </map>
+        
+    </div>
+    
+    <script>
+        function zero(){
+    document.calculator.ans.value+='0';
+   }
+   function um(){
+    document.calculator.ans.value+='1';
+   }
+   function dois(){
+    document.calculator.ans.value+='2';
+   }
+   function tres(){
+    document.calculator.ans.value+='3';
+   }
+   function quatro(){
+    document.calculator.ans.value+='4';
+   }
+   function cinco(){
+    document.calculator.ans.value+='5';
+   }
+   function seis(){
+    document.calculator.ans.value+='6';
+   }
+   function sete(){
+    document.calculator.ans.value+='7';
+   }
+   function oito(){
+    document.calculator.ans.value+='8';
+   }
+   function nove(){
+    document.calculator.ans.value+='9';
+   }
+   function virgula(){
+    document.calculator.ans.value+='.';
+   }
+   function mais(){
+    document.calculator.ans.value+='+';
+   }
+   function igual(){
+    document.calculator.ans.value=eval(document.calculator.ans.value);
+   }
+   function menos(){
+    document.calculator.ans.value+='-';
+   }
+   function vezes(){
+    document.calculator.ans.value+='*';
+   }
+   function divisao(){
+    document.calculator.ans.value+='/';
+   }
+    </script>
+</div>
+
+<form name="calculator" >
+    
+    <input type="textfield" name="ans" value="">
+
+    <footer>
+        <ul>
+            <li>Marcelo_buehring@estudante.sesisenai.org.br</li>
+            <li>(48) 3225 - 8811</li>
+         </ul>
+    </footer>
+</body>
+</html>

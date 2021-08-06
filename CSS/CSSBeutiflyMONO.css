@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    font-family: Arial;
+}
+
+header{
+    background-color: darkseagreen;
+    color: rgb(18, 37, 15);
+    padding: 16px;
+    font-weight: bolder;
+    font-size: 160%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav{
+    background-color: darkseagreen;
+    color: rgb(18, 37, 15);
+    padding: 1px;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li > a{
+    text-decoration: none;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: 8px;
+    color:rgb(31, 44, 9);
+    border-bottom: 2px solid rgb(80, 109, 26);
+    font-size: large;
+}
+
+nav li > a:hover{
+    color:rgb(7, 31, 9);
+    border-bottom: 2px solid rgb(80, 109, 26);
+}
+
+input{
+    width: 300%;
+    text-align: center;
+    border: 2px solid rgb(51, 51, 51);  
+    border-radius: 10px;
+    transform: translate(-34%, -66%);
+}
+button{
+    background-color: darkseagreen;
+    border: 2px solid rgb(80, 109, 26);  
+    width: 350px;
+    border-radius: 10px;
+    padding: 6px;
+    
+}
+
+#mais{display: none}
+#mais1{display: none}
+#mais2{display: none}
+#mais3{display: none}
+
+table{
+
+    border-radius: 10px;
+    width: 5000px;
+    padding: 6px;
+}
+
+h10{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+h11{
+    font-size: large;
+    text-align: center;
+}
+
+h12{
+    font-size: small;
+    text-align: center;
+}
+
+img{
+    
+    width: 200px;
+}
+.container figure.calculadora{
+    width: 240px;
+    height: 240px;
+    
+}
+.container figure.calculadora img{
+    position: absolute;
+    margin-left: -6.8%;
+}
+
+.container{
+    border: 1px solid rgb(17, 41, 17);
+    border-radius: 0.35em;
+    margin:auto;
+    margin-bottom: 16px;
+    width: 85%;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.col{
+    /*altura provisÃ³ria*/
+    height: 200px;
+    padding: 24px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 325px;
+}
+
+/*.col img{
+    width: 300px;
+    border-radius: 0.85em;
+}*/
+
+footer{
+    background-color: #217239;
+    color: bisque;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer li{
+    margin: 8px;
+}
+
+@media screen and(max-width: 800px){
+    .container{
+        width: 97%;
+    }
+    .row{
+        display: block;
+    }
+    .col{
+        width: 75%;
+    }
+
+    nav ul{
+        display: block;}
+    
+    }
